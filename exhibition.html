@@ -708,29 +708,46 @@ body{
 </head>
 
 <body>
-<!-- ================= بداية بصماتي ================= -->
-
-<section class="bsm-hero">
-
-    <img 
-        src="image1.jpeg" 
-        alt="بصماتي"
-        class="bsm-hero-image"
-    >
-
-    <div class="bsm-hero-overlay"></div>
-
-    <div class="bsm-hero-content">
-
-        <h1>بصماتي</h1>
-
-        <p>
-            محطات من تجربتي، إنجازاتي ومشاركتي
-        </p>
-
-    </div>
-
+<!-- ================= بداية بصماتي ================= --> 
+ 
+<section class="bsm-hero"> 
+ 
+    <img  
+        src="image1.jpeg"  
+        alt="بصماتي" 
+        class="bsm-hero-image" 
+    > 
+ 
+    <div class="bsm-hero-overlay"></div> 
+ 
+    <div class="bsm-hero-content"> 
+ 
+        <h1>بصماتي</h1> 
+ 
+        <p> 
+            محطات من تجربتي، إنجازاتي ومشاركتي 
+        </p> 
+ 
+    </div> 
+ 
 </section>
+
+
+<style>
+
+/* 📱 تلفون + 📱 تابلت فقط */
+@media (max-width: 1024px) {
+
+    .bsm-hero-image {
+        width: 100%;
+        height: auto;
+        display: block;
+        object-fit: contain;
+    }
+
+}
+
+</style>
 
 <!-- ================= نهاية بصماتي ================= -->
 <!-- HERO -->
@@ -2717,6 +2734,47 @@ footer{
         padding:45px 35px;
     }
 }
+/* =====================================================
+   📱 فيديوهات - الجوال
+   فيديوهين بجانب بعض
+===================================================== */
+
+@media (max-width: 767px) {
+
+    .video-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        width: 100%;
+    }
+
+    .video-card {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .video-card video {
+        width: 100%;
+        height: auto;
+        display: block;
+        object-fit: contain;
+    }
+
+    .video-info {
+        padding: 8px 5px;
+    }
+
+    .video-info h4 {
+        font-size: 13px;
+        line-height: 1.4;
+    }
+
+    .video-info p {
+        font-size: 11px;
+        line-height: 1.4;
+    }
+
+}
 
 
 /* ================= MOBILE ================= */
@@ -3212,6 +3270,33 @@ footer{
     }
 
 }
+}
+/* =====================================================
+   📱 صور برنامج بصمة - الجوال
+   3 صور بجانب بعض
+===================================================== */
+
+@media (max-width: 767px) {
+
+    .basma-gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
+        width: 100%;
+    }
+
+    .basma-photo {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .basma-photo img {
+        width: 100%;
+        height: auto;
+        display: block;
+        object-fit: contain;
+    }
+
 }
 
 </style>

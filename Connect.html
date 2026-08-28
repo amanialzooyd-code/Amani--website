@@ -2026,15 +2026,39 @@ CONTACT PAGE
 <main class="contact-page">
 
 
-    <!-- =================================================
-         الصورة الحقيقية كاملة الشاشة
-    ================================================== -->
+   
+<!-- =================================================
+     الصورة الحقيقية - الجوال والتابلت
+================================================== -->
 
-    <img
-        src="image1.jpeg"
-        class="contact-background"
-        alt="Amani Background"
-    >
+<img
+    src="image1.jpeg"
+    class="contact-background"
+    alt="Amani Background"
+>
+
+<style>
+/* 📱 الجوال */
+@media (max-width: 767px) {
+    .contact-background {
+        width: 100%;
+        height: auto;
+        display: block;
+        object-fit: contain;
+    }
+}
+
+/* 📱 التابلت */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .contact-background {
+        width: 100%;
+        height: auto;
+        display: block;
+        object-fit: contain;
+    }
+}
+</style>
+
 
 
     <!-- =================================================

@@ -190,7 +190,6 @@ HERO
     font-size:18px;
 }
 
-
 /* =====================================================
 ABOUT
 ===================================================== */
@@ -212,6 +211,27 @@ ABOUT
 
     border-radius:25px;
 }
+
+
+/* =====================================================
+📱 تلفون + 📱 تابلت
+إظهار الصورة كاملة بدون قص
+===================================================== */
+
+@media (max-width:1024px){
+
+    .about{
+
+        background-size: contain;
+
+        background-position: center;
+
+        background-repeat: no-repeat;
+
+    }
+
+}
+
 
 
 .about::before{
@@ -670,6 +690,7 @@ MOBILE CURSOR
         height: auto;
     }
 }
+
 </style>
 
 </head>
