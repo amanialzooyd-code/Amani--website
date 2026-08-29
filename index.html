@@ -212,46 +212,50 @@ ABOUT
     border-radius:25px;
 }
 
-
 /* =====================================================
 📱 تلفون + 📱 تابلت
 إظهار الصورة كاملة بدون قص
 ===================================================== */
 
-@media (max-width:1024px){
+@media (max-width: 1024px) {
 
-    .about{
-
+    .about {
         background-size: contain;
-
-        background-position: center;
-
+        background-position: center center;
         background-repeat: no-repeat;
 
+        /* مساحة مناسبة للصورة */
+        min-height: 100vh;
+
+        /* لون خلف الصورة */
+        background-color: #000;
     }
 
 }
 
 
+/* طبقة التعتيم */
 
-.about::before{
+.about::before {
 
-    content:"";
+    content: "";
 
-    position:absolute;
+    position: absolute;
 
-    inset:0;
+    inset: 0;
 
-    background:
-    rgba(0,0,0,0.7);
+    background: rgba(0,0,0,0.7);
+
 }
 
 
-.about > div{
+/* محتوى القسم فوق الصورة */
 
-    position:relative;
+.about > div {
 
-    z-index:2;
+    position: relative;
+
+    z-index: 2;
 }
 
 

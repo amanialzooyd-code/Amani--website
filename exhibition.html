@@ -1700,6 +1700,27 @@ slider.addEventListener("mouseleave", () => {
     transform:scale(1.03);
 }
 
+/* 📱 الجوال */
+@media (max-width: 767px) {
+    .contact-background {
+        width: 100%;
+        height: auto;
+        display: block;
+        object-fit: contain;
+    }
+}
+
+/* 📱 التابلت */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .contact-background {
+        width: 100%;
+        height: auto;
+        display: block;
+        object-fit: contain;
+    }
+}
+
+
 /* طبقة فوق الصورة لتحسين وضوح النص */
 .project-details::after{
     content:"";
