@@ -211,24 +211,39 @@ ABOUT
 
     border-radius:25px;
 }
-
 /* =====================================================
-📱 تلفون + 📱 تابلت
-إظهار الصورة كاملة بدون قص
+   📱 تلفون + 📱 تابلت
+   صورة كبيرة ومناسبة لحجم الشاشة
 ===================================================== */
 
 @media (max-width: 1024px) {
 
     .about {
-        background-size: contain;
+        min-height: 100vh;
+
+        background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
 
-        /* مساحة مناسبة للصورة */
+        background-color: #000;
+    }
+
+}
+
+
+/* =====================================================
+   📱 تلفون فقط
+   تكبير الصورة لتناسب شاشة الهاتف
+===================================================== */
+
+@media (max-width: 767px) {
+
+    .about {
         min-height: 100vh;
 
-        /* لون خلف الصورة */
-        background-color: #000;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
     }
 
 }
